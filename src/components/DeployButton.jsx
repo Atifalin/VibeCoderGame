@@ -4,7 +4,7 @@ import { scorePrompt, calculatePayout } from '../utils/scoring';
 import deployIcon from '../assets/svg/deploy.svg';
 import confetti from 'canvas-confetti';
 import toast from 'react-hot-toast';
-import { playSuccess, playCoin } from '../utils/sounds';
+import { playSuccess, playCoin, playError } from '../utils/sounds';
 
 export default function DeployButton({ selectedBlocks, onDeploy, isMuted }) {
   const { getCurrentRequest, gameState, completeRequest } = useGame();
@@ -74,7 +74,6 @@ export default function DeployButton({ selectedBlocks, onDeploy, isMuted }) {
           spread: 60,
           origin: { y: 0.6 }
         });
-        setFeedback({ message: '🎉 EXCELLENT! Great work!', color: 'text-green-400' });
         const msg = messages.great[Math.floor(Math.random() * messages.great.length)];
         toast.success(`${msg} +$${payout}`, {
           icon: '💰',
@@ -90,7 +89,6 @@ export default function DeployButton({ selectedBlocks, onDeploy, isMuted }) {
           playSuccess();
           playCoin();
         }
-        setFeedback({ message: '✅ GOOD! Solid execution!', color: 'text-blue-400' });
         const msg = messages.good[Math.floor(Math.random() * messages.good.length)];
         toast(`${msg} +$${payout}`, {
           icon: '📦',
@@ -103,7 +101,6 @@ export default function DeployButton({ selectedBlocks, onDeploy, isMuted }) {
         });
       } else if (score.completeness >= 40) {
         if (!isMuted) playCoin();
-        setFeedback({ message: '⚠️ ACCEPTABLE... Room for improvement.', color: 'text-yellow-400' });
         const msg = messages.couldBeBetter[Math.floor(Math.random() * messages.couldBeBetter.length)];
         toast(`${msg} +$${payout}`, {
           icon: '😬',
@@ -116,7 +113,6 @@ export default function DeployButton({ selectedBlocks, onDeploy, isMuted }) {
         });
       } else {
         if (!isMuted) playError();
-        setFeedback({ message: '❌ POOR! Client is unhappy!', color: 'text-red-400' });
         const msg = messages.couldBeBetter[Math.floor(Math.random() * messages.couldBeBetter.length)];
         toast(`${msg} +$${payout}`, {
           icon: '😬',
