@@ -1,0 +1,322 @@
+[
+  {
+    "id": "req-001",
+    "title": "Quick To-Do List",
+    "description": "Build a simple to-do app. Just needs task creation, completion toggle, and dark mode. Keep it minimal!",
+    "difficulty": 1,
+    "required_keywords": ["todo", "dark mode"],
+    "tokenBudget": 25
+  },
+  {
+    "id": "req-002",
+    "title": "Landing Page for Startup",
+    "description": "Clean landing page for a new SaaS product. Make it look professional with smooth animations.",
+    "difficulty": 1,
+    "required_keywords": ["landing", "animations"],
+    "tokenBudget": 28
+  },
+  {
+    "id": "req-003",
+    "title": "Personal Dashboard",
+    "description": "A dashboard to track daily habits and goals. Needs auth so users can save their data.",
+    "difficulty": 2,
+    "required_keywords": ["dashboard", "auth", "db"],
+    "tokenBudget": 32
+  },
+  {
+    "id": "req-004",
+    "title": "Mobile Expense Tracker",
+    "description": "Track daily expenses on mobile. Add offline support so it works without internet. Include dark mode.",
+    "difficulty": 2,
+    "required_keywords": ["mobile", "offline", "dark mode"],
+    "tokenBudget": 35
+  },
+  {
+    "id": "req-005",
+    "title": "Weather App with Maps",
+    "description": "Show current weather and forecast. Use Google Maps to display the location. Make it fast!",
+    "difficulty": 2,
+    "required_keywords": ["api", "google maps"],
+    "tokenBudget": 30
+  },
+  {
+    "id": "req-006",
+    "title": "Chatbot Interface",
+    "description": "Build a chatbot UI with message history and typing indicators. Keep it simple but functional.",
+    "difficulty": 2,
+    "required_keywords": ["chatbot", "db"],
+    "tokenBudget": 35
+  },
+  {
+    "id": "req-007",
+    "title": "E-commerce Product Page",
+    "description": "Product listing with shopping cart and Stripe checkout. Need auth for user accounts and order history.",
+    "difficulty": 3,
+    "required_keywords": ["ecommerce", "stripe", "auth", "db"],
+    "tokenBudget": 42
+  },
+  {
+    "id": "req-008",
+    "title": "Mobile Fitness Tracker",
+    "description": "Track workouts on mobile with offline support. Add push notifications for workout reminders. Include dark mode for night use.",
+    "difficulty": 3,
+    "required_keywords": ["mobile", "offline", "push notifications", "dark mode"],
+    "tokenBudget": 40
+  },
+  {
+    "id": "req-009",
+    "title": "Expense Tracker",
+    "description": "Personal finance app to track income and expenses. Needs categories, monthly reports, and data export to CSV.",
+    "difficulty": 3,
+    "required_keywords": ["expense", "reports", "export"],
+    "tokenBudget": 55
+  },
+  {
+    "id": "req-010",
+    "title": "Portfolio Website",
+    "description": "Personal portfolio site with project showcase, about section, and contact form. Needs dark mode and smooth animations.",
+    "difficulty": 2,
+    "required_keywords": ["portfolio", "dark mode", "animations"],
+    "tokenBudget": 40
+  },
+  {
+    "id": "req-011",
+    "title": "Task Management Dashboard",
+    "description": "Kanban-style board for project management with drag-and-drop, team collaboration, and deadline tracking.",
+    "difficulty": 4,
+    "required_keywords": ["kanban", "drag-and-drop", "collaboration"],
+    "tokenBudget": 70
+  },
+  {
+    "id": "req-012",
+    "title": "Music Player App",
+    "description": "Audio player with playlist management, shuffle, repeat, and background playback. Needs offline support.",
+    "difficulty": 3,
+    "required_keywords": ["music", "playlist", "offline"],
+    "tokenBudget": 60
+  },
+  {
+    "id": "req-013",
+    "title": "Quiz Game Platform",
+    "description": "Multiple choice quiz game with timer, scoring, and leaderboard. Support different quiz categories.",
+    "difficulty": 3,
+    "required_keywords": ["quiz", "timer", "leaderboard"],
+    "tokenBudget": 55
+  },
+  {
+    "id": "req-014",
+    "title": "Booking System",
+    "description": "Appointment booking for service business. Calendar view, email notifications, and payment processing with Stripe.",
+    "difficulty": 5,
+    "required_keywords": ["booking", "calendar", "stripe", "notifications"],
+    "tokenBudget": 75
+  },
+  {
+    "id": "req-015",
+    "title": "Note Taking App",
+    "description": "Rich text editor for notes with folders, tags, and search. Needs offline support and cloud sync.",
+    "difficulty": 3,
+    "required_keywords": ["notes", "editor", "offline", "sync"],
+    "tokenBudget": 60
+  },
+  {
+    "id": "req-016",
+    "title": "Real Estate Listings",
+    "description": "Property listing site with map integration, filters by price/location, and contact form for inquiries.",
+    "difficulty": 4,
+    "required_keywords": ["real estate", "map", "filters"],
+    "tokenBudget": 65
+  },
+  {
+    "id": "req-017",
+    "title": "Blog Platform",
+    "description": "Multi-author blog with markdown editor, comments, categories, and SEO optimization. Needs admin panel.",
+    "difficulty": 4,
+    "required_keywords": ["blog", "cms", "admin", "db", "auth", "seo"],
+    "tokenBudget": 70
+  },
+  {
+    "id": "req-018",
+    "title": "Habit Tracker",
+    "description": "Daily habit tracking with streaks, reminders, and progress visualization. Needs push notifications.",
+    "difficulty": 2,
+    "required_keywords": ["habit", "notifications", "streaks"],
+    "tokenBudget": 45
+  },
+  {
+    "id": "req-019",
+    "title": "Video Streaming Platform",
+    "description": "YouTube-like video player with playlists, comments, and user subscriptions. Needs auth and video upload.",
+    "difficulty": 5,
+    "required_keywords": ["video", "streaming", "auth", "upload"],
+    "tokenBudget": 85
+  },
+  {
+    "id": "req-020",
+    "title": "Restaurant Menu App",
+    "description": "Digital menu with categories, photos, and online ordering. Integrate payment and order tracking.",
+    "difficulty": 3,
+    "required_keywords": ["menu", "ordering", "payment"],
+    "tokenBudget": 55
+  },
+  {
+    "id": "req-021",
+    "title": "Simple Calculator",
+    "description": "Basic calculator with standard operations. Clean UI with keyboard support.",
+    "difficulty": 1,
+    "required_keywords": ["calculator", "ui", "responsive"],
+    "tokenBudget": 30
+  },
+  {
+    "id": "req-022",
+    "title": "Crypto Price Tracker",
+    "description": "Real-time cryptocurrency prices with charts, alerts, and portfolio tracking. Needs WebSocket support.",
+    "difficulty": 4,
+    "required_keywords": ["dashboard", "analytics", "charts", "real-time", "auth", "websocket", "api", "db"],
+    "tokenBudget": 75
+  },
+  {
+    "id": "req-023",
+    "title": "URL Shortener",
+    "description": "Create short URLs with analytics tracking. Needs API, database, and QR code generation.",
+    "difficulty": 3,
+    "required_keywords": ["url", "api", "db", "qr"],
+    "tokenBudget": 60
+  },
+  {
+    "id": "req-024",
+    "title": "Markdown Editor",
+    "description": "Live preview markdown editor with syntax highlighting and export to PDF.",
+    "difficulty": 2,
+    "required_keywords": ["markdown", "editor", "preview", "pdf", "export"],
+    "tokenBudget": 45
+  },
+  {
+    "id": "req-025",
+    "title": "AI Chatbot Platform",
+    "description": "Full-featured AI chatbot with conversation history, multiple models, streaming responses, and admin dashboard.",
+    "difficulty": 5,
+    "required_keywords": ["ai", "chatbot", "streaming", "admin", "db"],
+    "tokenBudget": 65
+  },
+  {
+    "id": "req-026",
+    "title": "Pomodoro Timer",
+    "description": "Focus timer with breaks, notifications, and productivity stats.",
+    "difficulty": 2,
+    "required_keywords": ["timer", "notifications", "stats", "productivity"],
+    "tokenBudget": 40
+  },
+  {
+    "id": "req-027",
+    "title": "Code Snippet Manager",
+    "description": "Store and organize code snippets with syntax highlighting, tags, and search.",
+    "difficulty": 3,
+    "required_keywords": ["code", "search", "tags"],
+    "tokenBudget": 55
+  },
+  {
+    "id": "req-028",
+    "title": "Multiplayer Game Lobby",
+    "description": "Real-time multiplayer lobby with matchmaking, chat, and game state sync using WebSockets.",
+    "difficulty": 5,
+    "required_keywords": ["multiplayer", "real-time", "websocket", "chat"],
+    "tokenBudget": 85
+  },
+  {
+    "id": "req-029",
+    "title": "PDF Invoice Generator",
+    "description": "Generate professional invoices with company branding and email delivery.",
+    "difficulty": 3,
+    "required_keywords": ["pdf", "invoice", "email"],
+    "tokenBudget": 50
+  },
+  {
+    "id": "req-030",
+    "title": "Image Gallery",
+    "description": "Photo gallery with upload, filters, albums, and sharing capabilities.",
+    "difficulty": 2,
+    "required_keywords": ["image", "upload", "gallery"],
+    "tokenBudget": 45
+  },
+  {
+    "id": "req-031",
+    "title": "API Rate Limiter Service",
+    "description": "Microservice for API rate limiting with Redis, monitoring dashboard, and configurable rules.",
+    "difficulty": 4,
+    "required_keywords": ["api", "rate-limit", "redis", "monitoring"],
+    "tokenBudget": 70
+  },
+  {
+    "id": "req-032",
+    "title": "Flashcard Study App",
+    "description": "Spaced repetition flashcards with progress tracking and multiple decks.",
+    "difficulty": 3,
+    "required_keywords": ["flashcard", "study", "progress"],
+    "tokenBudget": 55
+  },
+  {
+    "id": "req-033",
+    "title": "Simple Blog",
+    "description": "Personal blog with posts, comments, and RSS feed.",
+    "difficulty": 2,
+    "required_keywords": ["blog", "comments"],
+    "tokenBudget": 40
+  },
+  {
+    "id": "req-034",
+    "title": "Stock Trading Simulator",
+    "description": "Paper trading platform with real-time stock data, portfolio management, and performance analytics.",
+    "difficulty": 5,
+    "required_keywords": ["stock", "trading", "real-time", "portfolio", "analytics"],
+    "tokenBudget": 95
+  },
+  {
+    "id": "req-035",
+    "title": "QR Code Scanner",
+    "description": "Mobile app to scan QR codes with history and generation features.",
+    "difficulty": 2,
+    "required_keywords": ["qr", "scanner", "mobile"],
+    "tokenBudget": 40
+  },
+  {
+    "id": "req-036",
+    "title": "Email Newsletter Platform",
+    "description": "Send bulk emails with templates, subscriber management, analytics, and unsubscribe handling.",
+    "difficulty": 4,
+    "required_keywords": ["email", "newsletter", "analytics", "subscribers"],
+    "tokenBudget": 75
+  },
+  {
+    "id": "req-037",
+    "title": "Color Palette Generator",
+    "description": "Generate and save color palettes with export options.",
+    "difficulty": 1,
+    "required_keywords": ["color", "palette"],
+    "tokenBudget": 30
+  },
+  {
+    "id": "req-038",
+    "title": "Video Streaming Platform",
+    "description": "YouTube-like platform with video upload, transcoding, adaptive streaming, comments, and subscriptions.",
+    "difficulty": 5,
+    "required_keywords": ["video", "streaming", "upload", "transcoding", "subscriptions"],
+    "tokenBudget": 100
+  },
+  {
+    "id": "req-039",
+    "title": "Password Manager",
+    "description": "Secure password vault with encryption, auto-fill, and password generator.",
+    "difficulty": 4,
+    "required_keywords": ["password", "encryption", "security"],
+    "tokenBudget": 70
+  },
+  {
+    "id": "req-040",
+    "title": "Weather Widget",
+    "description": "Embeddable weather widget showing current conditions.",
+    "difficulty": 1,
+    "required_keywords": ["weather", "widget"],
+    "tokenBudget": 25
+  }
+]
