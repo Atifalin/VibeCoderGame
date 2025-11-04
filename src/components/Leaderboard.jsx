@@ -4,9 +4,16 @@ import { useState, useEffect } from 'react';
 export default function Leaderboard() {
   const { getLeaderboard, setScreen } = useGame();
   const [leaderboard, setLeaderboard] = useState([]);
+  const [loading, setLoading] = useState(true);
   
   useEffect(() => {
-    setLeaderboard(getLeaderboard());
+    async function loadLeaderboard() {
+      setLoading(true);
+      const data = await getLeaderboard();
+      setLeaderboard(data);
+      setLoading(false);
+    }
+    loadLeaderboard();
   }, [getLeaderboard]);
 
   return (
@@ -24,10 +31,15 @@ export default function Leaderboard() {
               ← Back
             </button>
           </div>
-          <p className="text-gray-400 font-mono text-sm">// Top 10 Vibe Coders</p>
+          <p className="text-gray-400 font-mono text-sm">// Global Leaderboard - Top Players</p>
         </div>
         
-        {leaderboard.length === 0 ? (
+        {loading ? (
+          <div className="codepen-card p-12 text-center">
+            <div className="animate-spin w-12 h-12 border-4 border-purple-500 border-t-transparent rounded-full mx-auto mb-4"></div>
+            <p className="text-gray-400 font-mono">Loading leaderboard...</p>
+          </div>
+        ) : leaderboard.length === 0 ? (
           <div className="codepen-card p-12 text-center">
             <p className="text-2xl text-gray-300 font-mono mb-4">// No entries yet</p>
             <p className="text-gray-400">Be the first to make it to the leaderboard!</p>

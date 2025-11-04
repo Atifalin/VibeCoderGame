@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import requestsData from '../data/requests.json';
 import { GAME_CONSTANTS } from '../utils/scoring';
+import * as leaderboardService from '../lib/leaderboardService';
 
 const GameContext = createContext();
 
@@ -243,32 +244,11 @@ export const GameProvider = ({ children }) => {
   }, []);
 
   const saveToLeaderboard = useCallback((playerName) => {
-    try {
-      const leaderboard = JSON.parse(localStorage.getItem('vibeCoderLeaderboard') || '[]');
-      leaderboard.push({
-        name: playerName,
-        money: gameState.money,
-        day: gameState.day,
-        completedRequests: gameState.completedRequests,
-        timestamp: Date.now(),
-      });
-      // Sort by money descending
-      leaderboard.sort((a, b) => b.money - a.money);
-      // Keep top 10
-      const top10 = leaderboard.slice(0, 10);
-      localStorage.setItem('vibeCoderLeaderboard', JSON.stringify(top10));
-    } catch (e) {
-      console.error('Failed to save to leaderboard:', e);
-    }
+    return leaderboardService.saveToLeaderboard(playerName, gameState);
   }, [gameState]);
 
   const getLeaderboard = useCallback(() => {
-    try {
-      return JSON.parse(localStorage.getItem('vibeCoderLeaderboard') || '[]');
-    } catch (e) {
-      console.error('Failed to load leaderboard:', e);
-      return [];
-    }
+    return leaderboardService.getLeaderboard();
   }, []);
 
   return (

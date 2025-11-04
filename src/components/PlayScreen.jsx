@@ -33,7 +33,10 @@ export default function PlayScreen() {
       <div className="codepen-card rounded-none border-x-0 border-t-0">
         <div className="max-w-7xl mx-auto px-2 sm:px-4 py-2 sm:py-4">
           <div className="flex items-center justify-between flex-wrap gap-2">
-            <h1 className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 font-mono">{'<VIBE_CODER />'}</h1>
+            <div>
+              <h1 className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 font-mono">{'<VIBE_CODER />'}</h1>
+              <p className="text-xs text-gray-600 font-mono">by Mohammed Atif Ali Neranki</p>
+            </div>
             
             <div className="flex items-center gap-4">
               <button

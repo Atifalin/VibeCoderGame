@@ -57,13 +57,28 @@ export default function Landing() {
         </div>
         
         {/* Footer */}
-        <div className="text-gray-600 text-sm font-mono space-y-2 pt-8">
+        <div className="text-gray-600 text-sm font-mono space-y-3 pt-8">
           <p className="text-yellow-400 font-bold animate-pulse">⚠️ Best played on desktop</p>
           <p className="text-gray-500">// A game about prompt engineering</p>
           <div className="flex items-center justify-center gap-4 text-xs">
             <span className="px-3 py-1 bg-indigo-500/20 border border-indigo-500/30 rounded">React</span>
             <span className="px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded">Vite</span>
             <span className="px-3 py-1 bg-pink-500/20 border border-pink-500/30 rounded">Tailwind</span>
+          </div>
+          
+          {/* Credits */}
+          <div className="pt-4 border-t border-gray-800 space-y-1">
+            <p className="text-gray-400 font-semibold">Created by</p>
+            <p className="text-purple-400 font-bold">Mohammed Atif Ali Neranki</p>
+            <div className="flex items-center justify-center gap-3 text-xs text-gray-500">
+              <a href="https://ezypath.in" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition-colors">
+                🌐 Ezypath.in
+              </a>
+              <span>•</span>
+              <a href="mailto:vibecoder@ezypath.in" className="hover:text-indigo-400 transition-colors">
+                ✉️ vibecoder@ezypath.in
+              </a>
+            </div>
           </div>
         </div>
       </div>
