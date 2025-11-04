@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useGame } from '../context/GameContext';
 import Inbox from './Inbox';
 import PromptBuilder from './PromptBuilder';
@@ -26,6 +26,11 @@ export default function PlayScreen() {
   const clearBlocks = () => {
     setSelectedBlocks([]);
   };
+  
+  // Clear selected blocks when request changes
+  useEffect(() => {
+    setSelectedBlocks([]);
+  }, [gameState.currentRequestIndex]);
   
   return (
     <div className="min-h-screen bg-[#0a0a0f] grid-bg overflow-hidden">
@@ -105,6 +110,7 @@ export default function PlayScreen() {
           {/* Middle Column: Client Request + Prompt Builder */}
           <div className="lg:col-span-6 flex flex-col gap-2 sm:gap-3 overflow-y-auto max-h-[80vh] lg:max-h-full">
             <PromptBuilder 
+              key={gameState.currentRequestIndex}
               selectedBlocks={selectedBlocks}
               setSelectedBlocks={setSelectedBlocks}
               tokenBudget={request?.tokenBudget || 50}
